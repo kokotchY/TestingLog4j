@@ -11,7 +11,6 @@
   <appender name="xmlAppender" class="org.apache.log4j.RollingFileAppender">
     <param name="File" value="demoApplication.xml" />
     <layout class="org.apache.log4j.xml.XMLLayout">
-        <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
         <param name="properties" value="true" />
         <param name="locationInfo" value="true" />
     </layout>        
