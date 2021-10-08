@@ -18,5 +18,10 @@ public class App
         LOG.warn( "Warning message" );
         LOG.debug( "Debug message" );
         LOG.fatal("Fatal message");
+        try {
+            float res = 0/0;
+        } catch ( Exception e ) {
+            LOG.error( "Exception", e);
+        }
     }
 }
